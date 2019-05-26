@@ -4,6 +4,7 @@
 ```
 docker run -d \
 --name ngrok \
+--net=host \
 -e NGROK_HOST=xxx.xxx.xxx.xxx \
 -e NGROK_PORT=4443 \
 -e NGROK_BUFSIZE=8192 \

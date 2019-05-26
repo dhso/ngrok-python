@@ -7,7 +7,9 @@ ENV NGROK_BUFSIZE 8192
 
 RUN mkdir -p /app
 
-COPY ngrok.json /app/ngrok.json
-COPY ngrok.py  /app/ngrok.py
+WORKDIR /app
 
-ENTRYPOINT cd /app && python ngrok.py ngrok.json
+COPY ngrok.json ngrok.json
+COPY ngrok.py  ngrok.py
+
+ENTRYPOINT python ngrok.py ngrok.json

@@ -1,7 +1,7 @@
 [{
     "protocol": "http",
     "hostname": "",
-    "subdomain": "nas",
+    "subdomain": "www",
     "rport": 0,
     "lhost": "127.0.0.1",
     "lport": 80

@@ -12,6 +12,9 @@ sequenceiq/ngrokd:latest \
 -httpsAddr=:4444 \
 -domain=xxx.com
 ```
+> Please remember to modify your domain name resolution
+
+> A | *.xxx.com | xxx.xxx.xxx.xxx
 
 # run ngrok client
 ```bash
